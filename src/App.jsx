@@ -1,9 +1,17 @@
+// import { Friendlist } from "./components/FriendList";
+// import { Profiler } from "./components/Profile";
+// import { TransactionHistory } from "./components/TransactionHistory";
+
+import Profiler from "./components/Profile/Profile";
+
 const App = () => {
   return (
-    <div>
-      <h1>Welcone to React </h1>
-      <h1>Welcone to React </h1>
-    </div>
+    <>
+      {/* <Friendlist /> */}
+      <Profiler />
+      {/* <TransactionHistory /> */}
+    </>
   );
 };
 export default App;
+// export default Header;
