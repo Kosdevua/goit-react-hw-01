@@ -1,15 +1,14 @@
-// import { Friendlist } from "./components/FriendList";
-// import { Profiler } from "./components/Profile";
-// import { TransactionHistory } from "./components/TransactionHistory";
-
 import userData from "./components/data/userDate.json";
+import friends from "./components/data/friends.json";
+import transactions from "./components/data/transactions.json";
 
 import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 const App = () => {
   return (
     <>
-      {/* <Friendlist /> */}
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -17,9 +16,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      {/* <TransactionHistory /> */}
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </>
   );
 };
 export default App;
-// export default Header;
