@@ -1,0 +1,23 @@
+.headTable {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 736px;
+  height: 373px;
+  border-collapse: collapse;
+}
+
+.headTable th {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.bodyTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.bodyTable td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}

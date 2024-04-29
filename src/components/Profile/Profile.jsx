@@ -1,14 +1,17 @@
+import s from "./Profile.module.css";
+
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
-    <div>
-      <div>
+    <div className={s.container}>
+      <div className={s.wrapperTop}>
         <img src={image} alt="User avatar" />
-        <p>{name}</p>
+        <p className={s.userName}>{name}</p>
         <p>{tag}</p>
         <p>{location}</p>
       </div>
-      <ul>
-        <li>
+
+      <ul className={s.profileStat}>
+        <li className={s.profilelist}>
           <span>Followers</span> <span>{stats.followers}</span>
         </li>
         <li>

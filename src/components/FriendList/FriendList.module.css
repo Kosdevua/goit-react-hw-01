@@ -1,5 +1,46 @@
 .container {
-  background-color: crimson;
-  width: 650px;
-  height: 700px;
+  width: 724px;
+  /* height: 233px; */
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: black;
+  gap: 24px;
+  display: flex;
 }
+.friendItem {
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.friendItem > div > img + p {
+  color: black;
+}
+.friendItem > div > img + p + p {
+  margin-bottom: 20px;
+  /* background-color: blueviolet; */
+}
+img {
+  width: 80px;
+  padding: 20px;
+}
+
+.isOnline {
+  color: green;
+}
+.isOffline {
+  color: red;
+}
+img + p {
+  font-size: xx-large;
+  text-align: center;
+}
+
+/* 
+className={clsx(
+  "alert",
+  variant,
+  outlined && "is-outlined",
+  elevated && "is-elevated" */

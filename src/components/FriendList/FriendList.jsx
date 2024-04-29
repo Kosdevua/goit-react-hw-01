@@ -1,3 +1,5 @@
+// import clsx from "clsx";
+
 import s from "./FriendList.module.css";
 console.log(s);
 
@@ -8,7 +10,7 @@ const FriendList = ({ friends }) => {
     <ul className={s.container}>
       {friends.map((friend) => {
         return (
-          <li key={friend.id}>
+          <li className={s.friendItem} key={friend.id}>
             <FriendListItem
               avatar={friend.avatar}
               name={friend.name}
