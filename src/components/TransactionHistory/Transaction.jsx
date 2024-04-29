@@ -1,7 +1,8 @@
+import s from "./TransactionHistory.module.css";
 const Transaction = ({ type, amount, currency }) => {
   return (
     <>
-      <td>{type}</td>
+      <td className={s.capitalize}>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
     </>
